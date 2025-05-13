@@ -8,10 +8,15 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 # Copy all csproj files
-COPY ["./FinanceTracker/FinanceTracker.csproj", "FinanceTracker/"]
-COPY ["./FinanceTracker.Application/FinanceTracker.Application.csproj", "FinanceTracker.Application/"]
-COPY ["./FinanceTracker.Infrastructure/FinanceTracker.Infrastructure.csproj", "FinanceTracker.Infrastructure/"]
-COPY ["./FinanceTracker.Persistence/FinanceTracker.Persistence.csproj", "FinanceTracker.Persistence/"]
+#COPY ["./FinanceTracker/FinanceTracker.csproj", "FinanceTracker/"]
+#COPY ["./FinanceTracker.Application/FinanceTracker.Application.csproj", "FinanceTracker.Application/"]
+#COPY ["./FinanceTracker.Infrastructure/FinanceTracker.Infrastructure.csproj", "FinanceTracker.Infrastructure/"]
+#COPY ["./FinanceTracker.Persistence/FinanceTracker.Persistence.csproj", "FinanceTracker.Persistence/"]
+COPY ["FinanceTracker/FinanceTracker.csproj", "FinanceTracker/"]
+COPY ["FinanceTracker.Application/FinanceTracker.Application.csproj", "FinanceTracker.Application/"]
+COPY ["FinanceTracker.Infrastructure/FinanceTracker.Infrastructure.csproj", "FinanceTracker.Infrastructure/"]
+COPY ["FinanceTracker.Persistence/FinanceTracker.Persistence.csproj", "FinanceTracker.Persistence/"]
+
 
 
 # Copy the entire solution
