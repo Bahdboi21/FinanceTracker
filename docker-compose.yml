@@ -1,0 +1,6 @@
+services:
+  financetracker:
+    image: ${DOCKER_REGISTRY-}financetracker
+    build:
+      context: .
+      dockerfile: FinanceTracker/Dockerfile
